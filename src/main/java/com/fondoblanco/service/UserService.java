@@ -34,7 +34,7 @@ public class UserService {
 		return userRepository.findById(id);
 	}
 
-	// Delete user
+	// Delete user by id
 	public void deleteById(String id) {
 		userRepository.deleteById(id);
 	}

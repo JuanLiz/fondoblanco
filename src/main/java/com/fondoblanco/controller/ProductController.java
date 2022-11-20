@@ -32,30 +32,29 @@ public class ProductController {
 	public void save(@RequestBody Product product) {
 		productService.save(product);
 	}
-	
+
 	// Read all products
 	@GetMapping("/products")
 	public List<Product> findAll() {
 		return productService.findAll();
 	}
-	
+
 	// Read product by id
 	@GetMapping("/products/{id}")
 	public Product findByid(@PathVariable String id) {
 		return productService.findById(id).get();
 	}
-	
+
 	// Update product
 	@PutMapping("/products")
 	public void update(@RequestBody Product product) {
 		productService.save(product);
 	}
-	
+
 	// Delete product by id
 	@DeleteMapping("/products/{id}")
 	public void deleteById(@PathVariable String id) {
 		productService.deleteById(id);
 	}
-	
 
 }

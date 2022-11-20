@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 import com.fondoblanco.model.Product;
 import com.fondoblanco.repository.ProductRepository;
 
-
 @Service
 public class ProductService {
 
@@ -24,18 +23,18 @@ public class ProductService {
 	public void save(Product product) {
 		productRepository.save(product);
 	}
-	
+
 	// Read all products
-	public List<Product> findAll(){
+	public List<Product> findAll() {
 		return productRepository.findAll();
 	}
-	
+
 	// Find product by id
 	public Optional<Product> findById(String id) {
 		return productRepository.findById(id);
 	}
-	
-	// Delete product
+
+	// Delete product by id
 	public void deleteById(String id) {
 		productRepository.deleteById(id);
 	}
