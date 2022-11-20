@@ -2,16 +2,16 @@ package com.fondoblanco.model;
 
 public class Item {
 
-	private String productid;
+	private String productId;
 	private int quantity;
-	private double unitprice;
+	private double unitPrice;
 
-	public String getProductid() {
-		return productid;
+	public String getProductId() {
+		return productId;
 	}
 
-	public void setProductid(String productid) {
-		this.productid = productid;
+	public void setProductId(String productId) {
+		this.productId = productId;
 	}
 
 	public int getQuantity() {
@@ -22,12 +22,12 @@ public class Item {
 		this.quantity = quantity;
 	}
 
-	public double getUnitprice() {
-		return unitprice;
+	public double getUnitPrice() {
+		return unitPrice;
 	}
 
-	public void setUnitprice(double unitprice) {
-		this.unitprice = unitprice;
+	public void setUnitPrice(double unitPrice) {
+		this.unitPrice = unitPrice;
 	}
 
 }

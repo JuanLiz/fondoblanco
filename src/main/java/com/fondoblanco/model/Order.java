@@ -3,71 +3,81 @@ package com.fondoblanco.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(value="orders")
+@Document(value = "orders")
 public class Order {
-	
+
 	@Id
 	private String id;
-	private String userid;
-	private String orderdate;
-	private String orderstatus;
-	private String orderdetailid;
-	private String shipmentid;
+	private String userId;
+	private String orderDate;
+	private String orderStatus;
+	private String orderDetailId;
+	private String shipmentId;
 	private double amount;
-	private String paymethod;
-	
-	
+	private String paymentMethod;
+
 	public String getId() {
 		return id;
 	}
+
 	public void setId(String id) {
 		this.id = id;
 	}
-	public String getUserid() {
-		return userid;
+
+	public String getUserId() {
+		return userId;
 	}
-	public void setUserid(String userid) {
-		this.userid = userid;
+
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
-	public String getOrderdate() {
-		return orderdate;
+
+	public String getOrderDate() {
+		return orderDate;
 	}
-	public void setOrderdate(String orderdate) {
-		this.orderdate = orderdate;
+
+	public void setOrderDate(String orderDate) {
+		this.orderDate = orderDate;
 	}
-	public String getOrderstatus() {
-		return orderstatus;
+
+	public String getOrderStatus() {
+		return orderStatus;
 	}
-	public void setOrderstatus(String orderstatus) {
-		this.orderstatus = orderstatus;
+
+	public void setOrderStatus(String orderStatus) {
+		this.orderStatus = orderStatus;
 	}
-	public String getOrderdetailid() {
-		return orderdetailid;
+
+	public String getOrderDetailId() {
+		return orderDetailId;
 	}
-	public void setOrderdetailid(String orderdetailid) {
-		this.orderdetailid = orderdetailid;
+
+	public void setOrderDetailId(String orderDetailId) {
+		this.orderDetailId = orderDetailId;
 	}
-	public String getShipmentid() {
-		return shipmentid;
+
+	public String getShipmentId() {
+		return shipmentId;
 	}
-	public void setShipmentid(String shipmentid) {
-		this.shipmentid = shipmentid;
+
+	public void setShipmentId(String shipmentId) {
+		this.shipmentId = shipmentId;
 	}
+
 	public double getAmount() {
 		return amount;
 	}
+
 	public void setAmount(double amount) {
 		this.amount = amount;
 	}
-	public String getPaymethod() {
-		return paymethod;
+
+	public String getPaymentMethod() {
+		return paymentMethod;
 	}
-	public void setPaymethod(String paymethod) {
-		this.paymethod = paymethod;
+
+	public void setPaymentMethod(String paymentMethod) {
+		this.paymentMethod = paymentMethod;
 	}
-	
-	
-	
-	
 
 }

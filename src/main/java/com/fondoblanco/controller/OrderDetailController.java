@@ -16,7 +16,7 @@ import com.fondoblanco.model.OrderDetail;
 import com.fondoblanco.service.OrderDetailService;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/orders")
 public class OrderDetailController {
 
 	private final OrderDetailService orderDetailService;
@@ -27,31 +27,31 @@ public class OrderDetailController {
 	}
 
 	// Create order detail
-	@PostMapping("/orders-details")
+	@PostMapping("/details")
 	public void save(@RequestBody OrderDetail orderDetail) {
 		orderDetailService.save(orderDetail);
 	}
 
 	// Read all orders details
-	@GetMapping("/orders-details")
+	@GetMapping("/details")
 	public List<OrderDetail> findAll() {
 		return orderDetailService.findAll();
 	}
 
 	// Read order detail by id
-	@GetMapping("/orders-details/{id}")
-	public OrderDetail findByid(@PathVariable String id) {
+	@GetMapping("/details/{id}")
+	public OrderDetail findById(@PathVariable String id) {
 		return orderDetailService.findById(id).get();
 	}
 
 	// Update order detail
-	@PutMapping("/orders-details")
+	@PutMapping("/details")
 	public void update(@RequestBody OrderDetail orderDetail) {
 		orderDetailService.save(orderDetail);
 	}
 
 	// Delete order detail by id
-	@DeleteMapping("/orders-details/{id}")
+	@DeleteMapping("/details/{id}")
 	public void deleteById(@PathVariable String id) {
 		orderDetailService.deleteById(id);
 	}
